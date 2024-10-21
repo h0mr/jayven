@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Javen's Projects</title>
+    <!-- Roboto Mono Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li> <!-- Portfolio Tab -->
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="chatbox.html">Chatbox</a></li> <!-- New Chatbox Tab -->
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="portfolio">
+            <h1 class="title">My Projects</h1>
+            <div class="card-container">
+                <div class="card">
+                    <h2>Rock Paper Scissors Game</h2>
+                    <p>A web-based Rock, Paper, Scissors game with score tracking and customizable UI features built using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="card">
+                    <h2>Tic Tac Toe Game</h2>
+                    <p>A modern, dark-themed Tic Tac Toe game built with a responsive design, using JavaScript, HTML, and CSS for a sleek user experience.</p>
+                </div>
+                <div class="card">
+                    <h2>Personal Portfolio Website</h2>
+                    <p>A clean, minimalist portfolio website with animations and a dark theme, built using React.js and CSS animations.</p>
+                </div>
+                <div class="card">
+                    <h2>Discord Bot for Role Management</h2>
+                    <p>A Discord bot built in Java for handling role assignments via reactions, designed to help server admins automate role distribution.</p>
+                </div>
+                <div class="card">
+                    <h2>AI Chatbox Integration</h2>
+                    <p>A custom chatbox embedded into a portfolio site, allowing users to interact with a basic AI assistant. Built with React and CSS for a clean UI.</p>
+                </div>
+                <div class="card">
+                    <h2>Secure Login Page</h2>
+                    <p>A sleek, dark-themed login page with modern form inputs and responsive design, utilizing security best practices in the front-end development.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Javen Encabo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cursor-dot"></div>
+
+<!-- JavaScript to control custom cursor movement -->
+<script>
+    const cursorDot = document.getElementById('cursor-dot');
+
+    // Move the custom cursor to match the default cursor's position
+    document.addEventListener('mousemove', function(e) {
+        cursorDot.style.left = e.pageX + 'px';
+        cursorDot.style.top = e.pageY + 'px';
+    });
+</script>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact - Javen's Portfolio</title>
+    <!-- FontAwesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Roboto Mono Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li> <!-- Portfolio Tab -->
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="chatbox.html">Chatbox</a></li> <!-- New Chatbox Tab -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <p>You can reach me via:</p>
+            <div class="contact-icons">
+                <a href="mailto:javen@example.com" class="contact-icon" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://linkedin.com/in/javenencabo" class="contact-icon" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/javen" class="contact-icon" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Javen Encabo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cursor-dot"></div>
+
+<!-- JavaScript to control custom cursor movement -->
+<script>
+    const cursorDot = document.getElementById('cursor-dot');
+
+    // Move the custom cursor to match the default cursor's position
+    document.addEventListener('mousemove', function(e) {
+        cursorDot.style.left = e.pageX + 'px';
+        cursorDot.style.top = e.pageY + 'px';
+    });
+</script>

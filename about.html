@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About - Javen's Portfolio</title>
+    <!-- Roboto Mono Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li> <!-- Portfolio Tab -->
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="chatbox.html">Chatbox</a></li> <!-- New Chatbox Tab -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <div class="table-layout">
+                <div class="table-row">
+                    <div class="table-title">Languages</div>
+                    <div class="table-content">
+                        <div class="skill">
+                            <h2>JavaScript</h2>
+                            <div class="progress">
+                                <div class="progress-bar" id="js-progress" style="width: 0%;">80%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h2>Python</h2>
+                            <div class="progress">
+                                <div class="progress-bar" id="python-progress" style="width: 0%;">70%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h2>HTML & CSS</h2>
+                            <div class="progress">
+                                <div class="progress-bar" id="html-progress" style="width: 0%;">90%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h2>Bash Scripting</h2>
+                            <div class="progress">
+                                <div class="progress-bar" id="bash-progress" style="width: 0%;">75%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="table-title">Employment History</div>
+                    <div class="table-content">
+                        <div class="job">
+                            <h3>Junior System Administrator</h3>
+                            <p>Kean IT (2024 - Present)</p>
+                        </div>
+                        <div class="job">
+                            <h3>Desktop Technician</h3>
+                            <p>Kean IT (2023 - 2024)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="table-layout">
+                <div class="table-row">
+                    <div class="table-title">IT Support & Troubleshooting</div>
+                    <div class="table-content">
+                        <p>I provide assistance with hardware and software issues, ensuring systems function efficiently.</p>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="table-title">System Administration</div>
+                    <div class="table-content">
+                        <p>Managing and maintaining IT infrastructure, including servers and networks, to ensure seamless operation.</p>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="table-title">Network Configuration</div>
+                    <div class="table-content">
+                        <p>Designing and configuring networks to optimize performance and security for businesses.</p>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="table-title">Web Development</div>
+                    <div class="table-content">
+                        <p>Creating responsive, modern websites that prioritize user experience and performance.</p>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="table-title">Cybersecurity Consulting</div>
+                    <div class="table-content">
+                        <p>Offering security solutions to protect systems from potential threats and vulnerabilities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Javen Encabo. All rights reserved.</p>
+    </footer>
+
+    <!-- Include JavaScript for animated progress bars -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cursor-dot"></div>
+
+<!-- JavaScript to control custom cursor movement -->
+<script>
+    const cursorDot = document.getElementById('cursor-dot');
+
+    // Move the custom cursor to match the default cursor's position
+    document.addEventListener('mousemove', function(e) {
+        cursorDot.style.left = e.pageX + 'px';
+        cursorDot.style.top = e.pageY + 'px';
+    });
+</script>
